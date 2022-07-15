@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+} /* Se añadió fuente Inter */
+
+.aco{
+    border-radius: 20px;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.card-deck{
+    margin-top: 15px;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.linkscard{
+    color:black;
+    text-decoration: solid;
+}
+
+.card-body {
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card:hover{
+    transition: all 400ms ease;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+  }
+  
+.card{
+    border-radius: 20px;
+    border-color: rgb(96, 186, 155);
+}
+
+.cont-imagen{
+    border-radius: 20px;
+}
+.card-title{
+    justify-content: center;
+}
+.orientacion{
+    text-align: justify;
+    margin: 1px;
+}
+.barra{
+    height: 7px;
+    width: 45%;
+    background-color: rgb(96, 186, 155);
+}
+
+#textoPaquete{
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* MEDIA QUERIE PARA CAMBIAR CARRUSEL */
+.celularCarrusel {
+    display: none;
+ }
+ 
+ @media only screen and (max-width: 500px){           
+    .pcCarrusel{
+      display: none;
+    }
+ 
+    .celularCarrusel{
+      display: block;
+    }
+} 
+@keyframes wipe-enter {
+    0% {
+        transform: scale(0, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.barra-titulo {
+    height: 7px;  /* cambias largo del borde */
+    margin-bottom: 30px;
+    background-color: rgb(96, 186, 155);
+    width: 45%;
+    margin-top: 0px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .barra-titulo {
+      animation-name: wipe-enter;
+      animation-duration: 1s;
+    }
+  }

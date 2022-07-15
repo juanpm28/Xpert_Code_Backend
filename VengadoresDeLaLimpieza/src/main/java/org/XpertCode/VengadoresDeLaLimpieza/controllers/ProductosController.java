@@ -28,7 +28,7 @@ public class ProductosController {
 		this.productoServices = productoServices;
 	}
 	
-	//CRUD
+	
 	@GetMapping //nivel método
 	public List<Producto> getAllProductos() {
 		return productoServices.getProductos();

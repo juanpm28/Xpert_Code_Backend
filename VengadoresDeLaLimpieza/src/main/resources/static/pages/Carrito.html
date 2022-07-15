@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="/src/css/Carrito.css" type="text/css">
+    <link rel="stylesheet" href="/src/css/navbaryfooter.css" type="text/css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+  <header>
+    <section id="superior"> <!-- Contenido superior  -->
+    <a href="/index.html"><img id="logo" src="/src/imagenes/LogoyEslogan.png" alt="logo"></a>
+    <section id="buscar">
+    <div class="d-flex justify-content-center">  <!-- Div que centra buscador -->
+        <form class="form-inline">
+          <input class="form-control barraBuscador" type="search" placeholder="¿Qué vas a limpiar hoy?" aria-label="Search">
+          <button class="btn my-2 my-sm-0 botonB" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="margin-bottom: 3px;">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+        </form>
+        </div> 
+    </section> <!-- Buscador -->
+
+      <section id="login">
+        <a class="nav-link" role="button" href="/pages/Carrito.html">
+        <svg id="carritoIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg>
+      </a>
+      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+        <img src="/src/imagenes/logotipoCuenta3.png" alt="" class="perfil"> 
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin:0px;">
+        <a class="dropdown-item" href="/pages/InicioSesion.html">Iniciar sesión</a>
+        <div class="dropdown-divider" ></div>
+        <a class="dropdown-item" href="/pages/Registrarse.html">Registrarse</a>
+            </div>
+      </section> <!-- Login Registrarse  -->
+    </section> <!-- Contenido superior  -->
+
+<hr id="hrSuperior"/>
+
+<div id="nav-center"> <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" id="togglerNavbar" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Inicio<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Productos.html">Productos</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/AcercaDeNosotros.html">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Contactanos.html">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+      </nav> <!-- Navbar -->
+    </div>
+</header>
+
+<div id="navbarCelular">  <!-- ///// NAVBAR DE CELULAR ///// -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a href="/index.html"><img id="logo" src="/src/imagenes/LogoyEslogan.png" alt="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Inicio<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link"  href="/pages/Productos.html">Productos</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pages/Servicios.html">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pages/AcercaDeNosotros.html">Acerca de nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pages/Contactanos.html">Contáctanos</a>
+      </li>
+    </ul>
+
+    <div id="carritoUsuario_celular">
+    <a class="nav-link" role="button" href="/pages/Carrito.html">
+      <svg id="carritoIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+      </svg>
+    </a>
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            <img src="/src/imagenes/logotipoCuenta3.png" alt="" class="perfil"> 
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin:0px;">
+            <a class="dropdown-item" href="/pages/InicioSesion.html">Iniciar sesion</a>
+
+            <div class="dropdown-divider" ></div>
+            <a class="dropdown-item" href="/pages/Registrarse.html">Registrarse</a>
+          </div>
+        </div>
+
+    <form class="form-inline">
+      <input class="form-control barraBuscador" type="search" placeholder="¿Qué vas a limpiar hoy?" aria-label="Search">
+      <button class="btn my-2 my-sm-0 botonB" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="margin-bottom: 3px;">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+    </button>
+    </form>
+  </div>
+</nav>
+
+<hr id="hrSuperior"/>
+
+</div>  <!-- ///// NAVBAR DE CELULAR ///// -->
+<section>
+<div id="bodyContenedor">
+  <div id="productoContenedor">
+      <div class="producto" data-idproducto="Kit de Limpieza" data-img="/src/imagenes/1_kit3.jpg"
+          data-des="Kit de Limpieza Completo mascota feliz" data-precio="587" data-cantidad="0"> <img
+              src="/src/imagenes/1_kit3.jpg" alt="Kit de Limpieza">
+          <h2 class="letra">Kit de Limpieza</h2>
+          <p>$587</p>
+          <button class="btn" style="background-color: rgb(96, 186, 155); color:white ">Comprar</button>
+      </div>
+      <div class="producto" data-idproducto="Guantes de Cocina" data-img="/src/imagenes/2_guant1_EDITADO.jpg"
+          data-des="Scotch-Brite Guantes de Cocina, Medianos" data-precio="31.82" data-cantidad="0">
+          <img src="/src/imagenes/2_guant1_EDITADO.jpg" alt="Scotch-Brite Guantes de Cocina, Medianos">
+          <h2 class="letra">Guantes de Cocina</h2>
+          <p>$31.82</p>
+          <button class="btn" style="background-color: rgb(96, 186, 155); color:white ">Comprar</button>
+      </div>
+      <div class="producto" data-idproducto="Paño Microfibra" data-img="/src/imagenes/3_trapo1_EDITADO.jpg" 
+      data-des="Scotch-Brite Paño Microfibra de Colores" data-precio="13" data-cantidad="0"> 
+      <img src="/src/imagenes/3_trapo1_EDITADO.jpg" alt="Paño Microfibra">
+          <h2 class="letra">Paño Microfibra</h2>
+          <p>$13</p>
+          <button class="btn" style="background-color: rgb(96, 186, 155); color:white ">Comprar</button>
+      </div>
+      <div class="producto" data-idproducto="Trapeador Plano" data-img="/src/imagenes/4_trapeador1_EDITADO.jpg"
+          data-des="Atrapa Polvo Microfibra" data-precio="249" data-cantidad="0"> 
+          <img src="/src/imagenes/4_trapeador1_EDITADO.jpg" alt="Trapeador Plano">
+          <h2 class="letra">Trapeador Plano</h2>
+          <p>$249</p>
+          <button class="btn" style="background-color: rgb(96, 186, 155); color:white ">Comprar</button>
+      </div>
+      <div class="producto" data-idproducto="Recogedor" data-img="/src/imagenes/5_recoge1_EDITADO.jpg"
+          data-des="Recogedor de Basura Rojo Multiusos" data-precio="200" data-cantidad="0">
+          <img src="/src/imagenes/5_recoge1_EDITADO.jpg" alt="Recogedor">
+          <h2 class="letra">Recogedor</h2>
+          <p>$200</p>
+          <button class="btn" style="background-color: rgb(96, 186, 155); color:white ">Comprar</button>
+      </div>
+      <div class="producto" data-idproducto="Kit Escoba" data-img="/src/imagenes/6_escoba1_EDITADO.jpg" 
+      data-des="Kit Escoba Exterior y Atrapa Pelos" data-precio="169" data-cantidad="0">
+          <img src="/src/imagenes/6_escoba1_EDITADO.jpg" alt="Kit Escoba">
+          <h2 class="letra">Kit de Escobas </h2>
+          <p>$169</p>
+          <button class="btn" style="background-color: rgb(96, 186, 155); color:white ">Comprar</button>
+      </div>
+      <div class="producto" data-idproducto="Trapeador Largo" data-img="/src/imagenes/7_traplargo1_EDITADO.jpg" 
+      data-des="Scotch-Brite Trapeador Extra Largo" data-precio="115.20" data-cantidad="0">
+          <img src="/src/imagenes/7_traplargo1_EDITADO.jpg" alt="Trapeador Largo">
+          <h2 class="letra">Trapeador Largo</h2>
+          <p>$115.20</p>
+          <button class="btn" style="background-color: rgb(96, 186, 155); color:white ">Comprar</button>
+      </div>
+      <div class="producto" data-idproducto="Stainless Toallas" data-img="/src/imagenes/8_toallas1_EDITADO.jpg" 
+      data-des="Stainless Steel Toallas 30CT Limpieza Profunda" data-precio="240" data-cantidad="0">
+          <img src="/src/imagenes/8_toallas1_EDITADO.jpg" alt="Stainless Toallas">
+          <h2 class="letra">Stainless Toallas</h2>
+          <p>$240</p>
+          <button class="btn" style="background-color: rgb(96, 186, 155); color:white ">Comprar</button>
+      </div>
+      <div class="producto" data-idproducto="Jalador" data-img="/src/imagenes/9_jalador1_EDITADO.jpg" 
+      data-des="Jalodor más Paño Suelos con Microfibra" data-precio="121" data-cantidad="0">
+          <img src="/src/imagenes/9_jalador1_EDITADO.jpg" alt="Jalador">
+          <h2 class="letra">Jalador</h2>
+          <p>$121</p>
+          <button class="btn" style="background-color: rgb(96, 186, 155); color:white ">Comprar</button>
+      </div>
+      <div class="producto" data-idproducto="Cubeta 20LT" data-img="/src/imagenes/10_cubeta1_EDITADO.jpg" 
+      data-des="Cubeta 20LT Exprimidor y Separador de Agua" data-precio="1260" data-cantidad="0">
+          <img src="/src/imagenes/10_cubeta1_EDITADO.jpg" alt="Cubeta 20LT">
+          <h2 class="letra">Cubeta 20LT</h2>
+          <p>$1260</p>
+          <button class="btn" style="background-color: rgb(96, 186, 155); color:white ">Comprar</button>
+      </div>
+  </div>
+  <div id="carritoDeCompras"> </div>
+  <h2 id=precioTotal>A Pagar: $0</h2>
+  </div>
+  <br>
+  <br>
+<a href="https://www.paypal.com/webapps/shoppingcart/error?flowlogging_id=f116914a394fa&code=GENERIC_ERROR&mfid=1656979172865_f116914a394fa"><button class="btn nueva" style="background-color: rgb(39, 110, 146); color:white ">Comprar</button></a>
+<br>
+<br>
+<br>
+<div>
+<img class="enmante" src="/src/imagenes/CAIDA.png">
+</div>
+</section>
+    <footer> 
+      <div class="footer-content">  
+          <div class="texto">
+            <p> Derechos Reservados &copy Vengadores de la Limpieza</p>
+          </div>
+          <div class="iconos">
+        <a href="https://twitter.com/Xpert_Code">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  class="bi bi-twitter" id="iconc" viewBox="0 0 16 16">
+           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+         </svg></a> <!---Fin del icono de tw-->
+         <!--Icono de Home con su Enlace-->
+         <a href="https://goo.gl/maps/3YVuFgjC1no4Z3Eq9">
+          <svg xmlns="http://www.w3.org/2000/svg" id="iconc" viewBox="0 0 16 16">
+            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+          </svg></a>
+          <!--Icono de Facebook con su Enlace-->
+          <a href="https://www.facebook.com/XpertCodeOfficial/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  class="bi bi-facebook" id="iconc" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg></a>
+          <!--Icono de Gmail con su Enlace-->
+          <a href="/pages/Contactanos.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  class="bi bi-envelope-fill" id="iconc" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+          </svg></a>
+          <!--Icono de Github con su Enlace-->
+          <a href="https://github.com/XpertCodeOfficial">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  class="bi bi-github" id="iconc" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg></a>
+        </div><!--iconos-->
+        </div> <!--footer-content-->
+    </footer>
+</body>
+<script type="text/javascript" src="/src/js/Carrito.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</html>

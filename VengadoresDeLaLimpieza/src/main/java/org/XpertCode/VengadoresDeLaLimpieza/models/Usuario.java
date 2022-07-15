@@ -15,8 +15,10 @@ public class Usuario {
 	@Column(name="idusuarios", unique=true, nullable=false)
 	private Long id;
     private String nombre;
+	@Column(name="correo", nullable = false)
     private String correo;
     private String telefono;
+	@Column(name="contrasena", nullable = false)
     private String contrasena;
 
     

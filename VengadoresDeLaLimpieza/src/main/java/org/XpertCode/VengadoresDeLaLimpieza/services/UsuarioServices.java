@@ -28,13 +28,21 @@ public class UsuarioServices {
 				);
 	}//getUsuarios, para obtener get por ID
 	
+	public Usuario deleteUsuario(Long id) {
+		Usuario tmpUsuario= null;
+		if (usuarioRepository.existsById(id)) {
+			tmpUsuario = usuarioRepository.findById(id).get();  //return optional
+			usuarioRepository.deleteById(id);  // delete no regresa, o¿solo elimina
+		}		
+		return tmpUsuario;
+	}
 	
 	public Usuario addUsuario(Usuario usuario) {  //buscar mejor por SKU
 		Usuario tmpUsuario = null;
 		Optional<Usuario> usuarioByCorreo = usuarioRepository.findByCorreo(usuario.getCorreo());
 		
 		if(usuarioByCorreo.isPresent()) {  // no se puede repetir con esto
-			throw new IllegalArgumentException("El Usuario con el id [" + usuario.getCorreo() + "] no existe.");
+			throw new IllegalArgumentException("El Usuario con el correo [" + usuario.getCorreo() + "] YA existe.");
 		} else {
 			usuarioRepository.save(usuario);
 			tmpUsuario = usuario;
@@ -42,19 +50,32 @@ public class UsuarioServices {
 		return tmpUsuario;
 	}
 	
+	public Usuario updateUsuario(Long id, String contrasena, String newContrasena) {
+		Usuario tmpUsuario= null;
+		if (usuarioRepository.existsById(id)) {
+			tmpUsuario = usuarioRepository.findById(id).get();
+			if (tmpUsuario.getContrasena().equals(contrasena)) { //comparando con la contraseña anterior
+				tmpUsuario.setContrasena(newContrasena);
+				usuarioRepository.save(tmpUsuario);
+			} else {
+				System.out.println("Error al comparar las contraseñas...");
+			}
+				//if equals password
+			}
+		return tmpUsuario;
+	} //if
 	
-	
-	public boolean login (String correo, String contrasena) {
-		boolean autorizacion = false;
-		Optional<Usuario> usuarioByLogin = usuarioRepository.findByCorreoAndContrasena(correo, contrasena);
-		if(usuarioByLogin.isPresent()) {
-			autorizacion = true;
-			System.out.println("Inicio de sesión exitoso");
-		}else {
-			System.out.println("Inicio de sesión fallido");
+	public boolean validateUsuario(Usuario usuario) {
+		boolean res = false;
+		Optional<Usuario> userByCorreo = usuarioRepository.findByCorreo(usuario.getCorreo());
+		if (userByCorreo.isPresent()) {
+			Usuario u = userByCorreo.get();
+			if (u.getContrasena().equals(usuario.getContrasena())) {
+				res = true;
+			}
 		}
-		return autorizacion;
-	}//login
+		return res;
+	}
 	
 	
 
